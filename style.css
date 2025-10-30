@@ -72,6 +72,9 @@ button:hover {
     transform: scale(1.05);
 }
 
+.fa-toggle-off{
+    font-size: 40px;
+}
 .overview {
     background-color: #161b22;
     margin-top: 25px;

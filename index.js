@@ -1,4 +1,26 @@
 let button = document.getElementById("search-btn")
+let toggle = document.querySelector(".onOff")
+let body = document.body
+let h2 = document.querySelector(".h2")
+
+
+toggle.addEventListener("click",()=>{
+    if (body.style.backgroundColor === "rgb(22, 27, 34)") {
+        body.style.backgroundColor = "#a4a4a4ff";
+        h2.style.color = "black"
+        toggle.textContent = "ON"
+    } else {
+        body.style.backgroundColor = "#161b22";
+        h2.style.color = "white"
+        toggle.textContent = "Off"
+    }
+    // if(body.style.backgroundColor === "#161b22"){
+    //     body.style.backgroundColor = "#d8d8d8ff"
+    //     toggle.setAttribute('fa-toggle-off','fa-toggle-on')
+    // }else{
+    //     body.style.backgroundColor = "#161b22"
+    // }
+})
 
 button.addEventListener("submit",(e)=>{
     e.preventDefault()
